@@ -20,4 +20,5 @@ Sample output:
 1. Fizz
 1. 19
 1. Buzz
-1. ... etc up to 100
+1. ... 
+1. up to 100
