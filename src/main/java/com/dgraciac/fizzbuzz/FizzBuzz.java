@@ -1,16 +1,21 @@
 package com.dgraciac.fizzbuzz;
 
-public class FizzBuzz {
-    public String compute(int number) {
+class FizzBuzz {
+    String compute(int number) {
+        StringBuilder stringBuilder = new StringBuilder();
+
         if (number % 3 == 0) {
-            return "Fizz";
+            stringBuilder.append("Fizz");
         }
+
         if (number % 5 == 0) {
-            return "Buzz";
+            stringBuilder.append("Buzz");
         }
-        if (number % 3 == 0 && number % 5 == 0) {
-            return "FizzBuzz";
+
+        if (number % 3 == 0 || number % 5 == 0) {
+            return stringBuilder.toString();
         }
-        return "Fizz";
+
+        return String.valueOf(number);
     }
 }
