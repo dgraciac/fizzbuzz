@@ -30,6 +30,7 @@ public class FizzBuzzShould {
     @Test
     public void produce_FizzBuzz_when_number_is_divisible_by_3_and_5() {
         FizzBuzz fizzbuzz = new FizzBuzz();
+
         final String fizzBuzz = "FizzBuzz";
         assertThat(fizzbuzz.compute(0)).isEqualTo(fizzBuzz);
         assertThat(fizzbuzz.compute(15)).isEqualTo(fizzBuzz);
